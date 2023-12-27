@@ -1,20 +1,8 @@
-# Dockerfile for Next client
+FROM node:18
 
-# Build react client
-FROM node:18-alpine
-
-# Working directory 
-WORKDIR /src/app/
-
+WORKDIR /src/app
 COPY package*.json ./
-
-# Intstall dependecies
-
-RUN npm install --production
-
-# Copy local files to app folder
+RUN npm install
 COPY . .
-
 EXPOSE 3000
-
-CMD [ "npm", "start" ]
+CMD npm run dev
