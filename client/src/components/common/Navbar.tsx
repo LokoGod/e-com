@@ -17,7 +17,7 @@ export default function Navbar() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
             <NavigationMenuContent>
               <NavigationMenuLink>Link</NavigationMenuLink>
             </NavigationMenuContent>
