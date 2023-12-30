@@ -1,3 +1,4 @@
+import CardRatings from "@/components/common/CardRatings";
 import CarouselComp from "@/components/common/CarouselComp";
 
 import { Button } from "@/components/ui/button";
@@ -9,15 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 export default function Home() {
   return (
@@ -31,7 +23,6 @@ export default function Home() {
       <div className="flex my-7 mx-10">
         <Card className="w-[350px] mr-10">
           <CardHeader>
-            
             <CardDescription>Logitech</CardDescription>
             <CardTitle>PRO Keyboard</CardTitle>
           </CardHeader>
@@ -44,7 +35,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="font-semibold">Rs 35,000.00</p>
-            <p></p>
+            <CardRatings/>
           </CardFooter>
           <CardFooter className="justify-center">
             <Button className="w-full">Add to cart</Button>
@@ -53,8 +44,8 @@ export default function Home() {
 
         <Card className="w-[350px] mr-10">
           <CardHeader>
-            <CardTitle>BlackWidow Chroma V2</CardTitle>
             <CardDescription>Razer</CardDescription>
+            <CardTitle>BlackWidow Chroma V2</CardTitle>
           </CardHeader>
           <CardContent>
             <img
@@ -65,7 +56,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="font-semibold">Rs 48,000.00</p>
-            <p></p>
+            <CardRatings/>
           </CardFooter>
           <CardFooter className="justify-center">
             <Button className="w-full">Add to cart</Button>
@@ -74,8 +65,8 @@ export default function Home() {
 
         <Card className="w-[350px] mr-10">
           <CardHeader>
-            <CardTitle>K70 Pro</CardTitle>
             <CardDescription>Corsair</CardDescription>
+            <CardTitle>K70 Pro</CardTitle>
           </CardHeader>
           <CardContent>
             <img
@@ -86,7 +77,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="font-semibold">Rs 32,500.00</p>
-            <p></p>
+            <CardRatings/>
           </CardFooter>
           <CardFooter className="justify-center">
             <Button className="w-full">Add to cart</Button>
@@ -95,8 +86,8 @@ export default function Home() {
 
         <Card className="w-[350px]">
           <CardHeader>
-            <CardTitle>K2 RGB </CardTitle>
             <CardDescription>Keychron</CardDescription>
+            <CardTitle>K2 RGB </CardTitle>
           </CardHeader>
           <CardContent>
             <img
@@ -107,7 +98,7 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <p className="font-semibold">Rs 69,900.00</p>
-            <p></p>
+            <CardRatings/>
           </CardFooter>
           <CardFooter className="justify-center">
             <Button className="w-full">Add to cart</Button>
