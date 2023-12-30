@@ -30,7 +30,7 @@ export default function Navbar() {
               className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
             >
               {/* <LogoSquare /> */}
-              <FaConnectdevelop size={35}/>
+              <FaConnectdevelop size={35} />
               <div className="ml-4 flex-none text-sm font-medium uppercase md:hidden lg:block">
                 {/* {SITE_NAME} */}
                 E-Com
