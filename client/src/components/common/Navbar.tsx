@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 
-import { FaBacon, FaMagnifyingGlass } from "react-icons/fa6";
-import { IoCartOutline } from "react-icons/io5";
+import { FaConnectdevelop, FaMagnifyingGlass } from "react-icons/fa6";
+import { LiaShoppingBagSolid } from "react-icons/lia";
 import {
   navigationMenuTriggerStyle,
   NavigationMenu,
@@ -30,8 +30,8 @@ export default function Navbar() {
               className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
             >
               {/* <LogoSquare /> */}
-              <FaBacon />
-              <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
+              <FaConnectdevelop size={35}/>
+              <div className="ml-4 flex-none text-sm font-medium uppercase md:hidden lg:block">
                 {/* {SITE_NAME} */}
                 E-Com
               </div>
@@ -46,17 +46,47 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
+                <div className="text-neutral-500  hover:text-black  dark:text-neutral-400 dark:hover:text-neutral-300">
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger>
+                          Categories
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                            <li className="row-span-3">
+                              <NavigationMenuLink asChild>
+                                <a
+                                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                  href="/"
+                                >
+                                  {/* <Icons.logo className="h-6 w-6" /> */}
+                                  <div className="mb-2 mt-4 text-lg font-medium">
+                                    shadcn/ui
+                                  </div>
+                                  <p className="text-sm leading-tight text-muted-foreground">
+                                    Beautifully designed components that you can
+                                    copy and paste into your apps. Accessible.
+                                    Customizable. Open Source.
+                                  </p>
+                                </a>
+                              </NavigationMenuLink>
+                            </li>
+                          </ul>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                </div>
+              </li>
+              <li>
                 <Link
                   href={""}
-                  className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
+                  className="mr-4 text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
                 >
                   Blog
                 </Link>
-              </li>
-              <li>
-                <div className="text-neutral-500  hover:text-black  dark:text-neutral-400 dark:hover:text-neutral-300">
-                  Categories
-                </div>
               </li>
             </ul>
           </div>
@@ -70,28 +100,16 @@ export default function Navbar() {
                 autoComplete="off"
                 className="w-full rounded-lg border bg-white px-4 py-2 text-sm text-black placeholder:text-neutral-500 dark:border-neutral-800 dark:bg-transparent dark:text-white dark:placeholder:text-neutral-400"
               />
-              <div className="absolute right-0 top-0 mr-3 flex h-full items-center">
+              <div className="absolute text-neutral-500 right-0 top-0 mr-3 flex h-full items-center">
                 <FaMagnifyingGlass className="h-4" />
               </div>
             </form>
           </div>
           <div className="flex justify-end md:w-1/3">
-            <IoCartOutline />
+            <LiaShoppingBagSolid size={25} />
           </div>
         </div>
       </nav>
-
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
     </>
   );
 }
