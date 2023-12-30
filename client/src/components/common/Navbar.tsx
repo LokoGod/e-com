@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { FaBacon,FaMagnifyingGlass } from "react-icons/fa6";
+import { FaBacon, FaMagnifyingGlass } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 import {
   navigationMenuTriggerStyle,
@@ -36,13 +36,13 @@ export default function Navbar() {
                 E-Com
               </div>
             </Link>
-            <ul className="hidden gap-6 text-sm md:flex md:items-center">
+            <ul className="ml-3 hidden gap-6 text-sm md:flex md:items-center">
               <li>
                 <Link
                   href={""}
                   className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
                 >
-                  Hello
+                  Home
                 </Link>
               </li>
               <li>
@@ -50,14 +50,12 @@ export default function Navbar() {
                   href={""}
                   className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
                 >
-                  Hello2
+                  Blog
                 </Link>
               </li>
               <li>
-                <div
-                  className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
-                >
-                  Hello3
+                <div className="text-neutral-500  hover:text-black  dark:text-neutral-400 dark:hover:text-neutral-300">
+                  Categories
                 </div>
               </li>
             </ul>
