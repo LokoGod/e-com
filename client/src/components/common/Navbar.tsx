@@ -1,4 +1,3 @@
-
 import {
   navigationMenuTriggerStyle,
   NavigationMenu,
@@ -13,7 +12,7 @@ import {
 
 export default function Navbar() {
   return (
-    <>
+    <nav>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -24,6 +23,6 @@ export default function Navbar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-    </>
+    </nav>
   );
 }
