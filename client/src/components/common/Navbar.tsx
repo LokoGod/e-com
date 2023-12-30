@@ -33,6 +33,7 @@ export default function Navbar() {
               <FaBacon />
               <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
                 {/* {SITE_NAME} */}
+                E-Com
               </div>
             </Link>
             <ul className="hidden gap-6 text-sm md:flex md:items-center">
@@ -53,12 +54,11 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href={""}
+                <div
                   className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
                 >
                   Hello3
-                </Link>
+                </div>
               </li>
             </ul>
           </div>
