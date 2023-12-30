@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { FaBacon } from "react-icons/fa6";
+import { FaBacon,FaMagnifyingGlass } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 import {
   navigationMenuTriggerStyle,
@@ -73,7 +73,7 @@ export default function Navbar() {
                 className="w-full rounded-lg border bg-white px-4 py-2 text-sm text-black placeholder:text-neutral-500 dark:border-neutral-800 dark:bg-transparent dark:text-white dark:placeholder:text-neutral-400"
               />
               <div className="absolute right-0 top-0 mr-3 flex h-full items-center">
-                <FaBacon className="h-4" />
+                <FaMagnifyingGlass className="h-4" />
               </div>
             </form>
           </div>
