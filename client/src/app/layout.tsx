@@ -17,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}
+      <body className={lexend.className}>
       <Navbar/>
+      {children}
       </body>
     </html>
   )
