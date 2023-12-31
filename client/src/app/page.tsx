@@ -23,24 +23,26 @@ export default function Home() {
 
         <div className="flex my-7 mx-10">
           <Card className="w-[350px] mr-10">
-            <CardHeader>
-              <CardDescription>Logitech</CardDescription>
-              <CardTitle>PRO Keyboard</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <img
-                src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/pro-keyboard/pro-keyboard-gallery/deu-pro-gaming-keyboard-gallery-topdown.png"
-                alt="Card Image"
-                className="w-full h-40 object-cover"
-              />
-            </CardContent>
-            <CardFooter className="flex justify-between">
-              <p className="font-semibold">Rs 35,000.00</p>
-              <CardRatings />
-            </CardFooter>
-            <CardFooter className="justify-center">
-              <Button className="w-full">Add to cart</Button>
-            </CardFooter>
+            <a href="ProductDetailed/">
+              <CardHeader>
+                <CardDescription>Logitech</CardDescription>
+                <CardTitle>PRO Keyboard</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <img
+                  src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/pro-keyboard/pro-keyboard-gallery/deu-pro-gaming-keyboard-gallery-topdown.png"
+                  alt="Card Image"
+                  className="w-full h-40 object-cover"
+                />
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <p className="font-semibold">Rs 35,000.00</p>
+                <CardRatings />
+              </CardFooter>
+              <CardFooter className="justify-center">
+                <Button className="w-full">Add to cart</Button>
+              </CardFooter>
+            </a>
           </Card>
 
           <Card className="w-[350px] mr-10">
