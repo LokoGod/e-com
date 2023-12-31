@@ -33,7 +33,7 @@ export default function Navbar() {
               <FaConnectdevelop size={35} />
               <div className="ml-4 flex-none text-sm font-medium uppercase md:hidden lg:block">
                 {/* {SITE_NAME} */}
-                E-Com
+                Key-Master
               </div>
             </Link>
             <ul className="ml-3 hidden gap-6 text-sm md:flex md:items-center">
