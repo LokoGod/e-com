@@ -6,7 +6,7 @@ import { FaConnectdevelop, FaArrowRightFromBracket } from "react-icons/fa6";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const copyrightDate = 2023 + (currentYear > 2023 ? `-${currentYear}` : "");
+  const copyrightDate = 2024
   const copyrightName = "Tech Comp 101" || "Key-Master" || "";
 
   return (
