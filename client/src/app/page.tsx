@@ -39,10 +39,11 @@ export default function Home() {
                 <p className="font-semibold">Rs 35,000.00</p>
                 <CardRatings />
               </CardFooter>
+              </a>
               <CardFooter className="justify-center">
                 <Button className="w-full">Add to cart</Button>
               </CardFooter>
-            </a>
+            
           </Card>
 
           <Card className="w-[350px] mr-10">

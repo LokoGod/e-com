@@ -1,6 +1,5 @@
 import Link from "next/link";
 import clsx from "clsx";
-import { Suspense } from "react";
 
 import { FaConnectdevelop, FaArrowRightFromBracket } from "react-icons/fa6";
 
