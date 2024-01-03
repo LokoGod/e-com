@@ -13,6 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FaChevronRight, FaHouse } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function ProductDetailed() {
   return (
@@ -36,39 +37,49 @@ export default function ProductDetailed() {
         </Breadcrumb>
       </div>
 
-      <div>
+      <div className="flex">
         <ul className="justify-start ml-7 mt-10">
           <li>
-            <img
+            <Image
               src="https://i.rtings.com/assets/products/yPRXGbwb/logitech-g-pro-keyboard/design-medium.jpg"
-              className="w-20 h-20 rounded-lg"
+              className="w-20 h-20 rounded-lg shadow-lg"
+              alt="Product sub image"
             />
           </li>
           <li>
-            <img
+          <Image
               src="https://i.rtings.com/assets/products/yPRXGbwb/logitech-g-pro-keyboard/design-medium.jpg"
-              className="mt-1 w-20 h-20 rounded-lg"
+              className="w-20 h-20 rounded-lg shadow-lg"
+              alt="Product sub image"
             />
           </li>
           <li>
-            <img
+          <Image
               src="https://i.rtings.com/assets/products/yPRXGbwb/logitech-g-pro-keyboard/design-medium.jpg"
-              className="mt-1 w-20 h-20 rounded-lg"
+              className="w-20 h-20 rounded-lg shadow-lg"
+              alt="Product sub image"
             />
           </li>
           <li>
-            <img
+          <Image
               src="https://i.rtings.com/assets/products/yPRXGbwb/logitech-g-pro-keyboard/design-medium.jpg"
-              className="mt-1 w-20 h-20 rounded-lg"
+              className="w-20 h-20 rounded-lg shadow-lg"
+              alt="Product sub image"
             />
           </li>
           <li>
-            <img
+          <Image
               src="https://i.rtings.com/assets/products/yPRXGbwb/logitech-g-pro-keyboard/design-medium.jpg"
-              className="mt-1 w-20 h-20 rounded-lg"
+              className="w-20 h-20 rounded-lg shadow-lg"
+              alt="Product sub image"
             />
           </li>
-        </ul>   
+        </ul>
+        <Image
+          src="https://i.rtings.com/assets/products/yPRXGbwb/logitech-g-pro-keyboard/design-medium.jpg"
+          className="ml-7 mt-10 rounded-lg w-[500px] shadow-lg"
+          alt="Product main image"
+        />
       </div>
     </>
   );
