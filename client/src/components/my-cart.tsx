@@ -19,10 +19,10 @@ interface CartItem {
 
 export default function MyCart() {
   const [cartItems, setCartItems] = useState<CartItem[]>([
-    { id: 1, name: "Product 1", price: 19.99, quantity: 1, image: "/placeholder.svg?height=80&width=80" },
-    { id: 2, name: "Product 2", price: 29.99, quantity: 2, image: "/placeholder.svg?height=80&width=80" },
-    { id: 3, name: "Product 3", price: 39.99, quantity: 1, image: "/placeholder.svg?height=80&width=80" },
-    { id: 4, name: "Product 4", price: 49.99, quantity: 3, image: "/placeholder.svg?height=80&width=80" },
+    { id: 1, name: "Sri Lankan Special Tea", price: 19.99, quantity: 1, image: "/Addaheading_18.png" },
+    { id: 2, name: "Tea makers private reserve", price: 29.99, quantity: 2, image: "/4yteork2.bmp" },
+    { id: 3, name: "Ceylon Tea", price: 39.99, quantity: 1, image: "/wkczbfvx.bmp" },
+    { id: 4, name: "Moroccan Mint Green Tea", price: 49.99, quantity: 3, image: "/6j306nx8.bmp" },
   ])
   const [notes, setNotes] = useState("")
 
@@ -85,6 +85,23 @@ export default function MyCart() {
       </Card>
 
       <div className="w-full lg:w-80 space-y-6">
+
+      <Card>
+          <CardHeader>
+            <CardTitle>Order Notes</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Label htmlFor="notes">Special instructions or comments</Label>
+            <Textarea
+              id="notes"
+              placeholder="Add any special instructions or comments about your order here..."
+              value={notes}
+              onChange={(e) => setNotes(e.target.value)}
+              className="mt-2"
+            />
+          </CardContent>
+        </Card>
+        
         <Card>
           <CardHeader>
             <CardTitle>Order Summary</CardTitle>
@@ -111,21 +128,7 @@ export default function MyCart() {
           </CardFooter>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Order Notes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <Label htmlFor="notes">Special instructions or comments</Label>
-            <Textarea
-              id="notes"
-              placeholder="Add any special instructions or comments about your order here..."
-              value={notes}
-              onChange={(e) => setNotes(e.target.value)}
-              className="mt-2"
-            />
-          </CardContent>
-        </Card>
+     
       </div>
     </div>
   )
