@@ -1,5 +1,5 @@
 import { error } from "console";
-import fundTransactionRepository from "../repositories/fundTransactionRepository";
+import fundTransactionRepository from "../repositories/flavourRepository";
 
 const getAllFundTransactions = async (req: any, res: any) => {
   try {
