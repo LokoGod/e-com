@@ -4,10 +4,10 @@ import bodyParser from "body-parser";
 import "dotenv/config";
 
 // Import custom routes
-import { fundTransactionRoute } from "./routes/fundTransactionRoute";
+import { flavourRoutes } from "./routes/flavourRoutes";
 
 // Import custom middleware
-import { httpStatusCodeHandler } from "./middleware/httpStatusCodeHandler";
+import errorHandler from "./middleware/errorMiddleware";
 
 // Instances
 const app = express();
@@ -15,10 +15,10 @@ const app = express();
 // Middleware Initialization
 app.use(bodyParser.json());
 app.use(cors());
-app.use(httpStatusCodeHandler);
+app.use(errorHandler);
 
 // API routing
-app.use("/api/v1/fundTransactions", fundTransactionRoute);
+app.use("/api/v1/flavour", flavourRoutes);
 
 const port = process.env.PORT || 9000;
 

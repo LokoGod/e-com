@@ -42,7 +42,7 @@ const getAllFlavours = async () => {
 //   });
 // };
 
-const fundTransactionRepository = {
+const flavourRepository = {
   getAllFlavours,
   // createFundTransaction,
   // getFundTransactionsByMonth,
@@ -50,4 +50,4 @@ const fundTransactionRepository = {
   // getAllMonthlyDetails
 };
 
-export default fundTransactionRepository;
+export default flavourRepository;
