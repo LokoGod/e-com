@@ -1,8 +1,8 @@
 import express from "express"
 const flavourRoutes = express.Router()
 
-import { getAllFlavours } from "../controllers/flavourController"
+import { createFlavour, getAllFlavours } from "../controllers/flavourController"
 
-flavourRoutes.route("/").get(getAllFlavours)
+flavourRoutes.route("/").get(getAllFlavours).post(createFlavour)
 
 export {flavourRoutes}
