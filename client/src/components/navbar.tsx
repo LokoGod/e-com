@@ -11,10 +11,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input"
+
 
 import { RxDesktop } from "react-icons/rx";
 import { FaRegSun } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
+import { Search } from "lucide-react";
+import { SearchCombo } from "./search-combo";
 
 export default function Navbar() {
   const { setTheme } = useTheme();
@@ -37,6 +41,10 @@ export default function Navbar() {
               </div>
             </Link>
           </div>
+
+          {/* <Input placeholder="Search..." className="w-80"/> */}
+
+          <SearchCombo />
 
           <div className="flex justify-end md:w-1/3">
             <DropdownMenu>
