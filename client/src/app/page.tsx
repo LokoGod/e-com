@@ -21,12 +21,12 @@ import DashTable from "@/components/dashboard/dash-table";
 import { DashBarChart } from "@/components/dashboard/dash-bar-chart";
 
 
-export default async function Home() {
+export default async function Dashboard() {
 
   return (
     <main>
       <Tabs defaultValue="dash">
-        <Card className="w-fit mx-auto mt-2 mb-10">
+        <Card className="w-fit flex justify-start mx-10 mt-2 mb-10">
           <TabsList>
             <TabsTrigger value="dash">Dashboard</TabsTrigger>
             <TabsTrigger value="job">Job Listing</TabsTrigger>
