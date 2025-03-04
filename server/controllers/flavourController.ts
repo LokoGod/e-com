@@ -17,7 +17,7 @@ const createFlavour = async (req: Request, res: Response, next: NextFunction) =>
   const { flavourName } = req.body
   try {
     const flavours = await flavourRepository.createFlavour(flavourName)
-    res.status(201).json({flavours})
+    res.status(201).json(flavours)
   } catch (error) {
     next(error)
   }

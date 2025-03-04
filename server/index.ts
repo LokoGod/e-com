@@ -5,6 +5,7 @@ import "dotenv/config";
 
 // Import custom routes
 import { flavourRoutes } from "./routes/flavourRoutes";
+import { teaCategoryRoutes } from "./routes/teaCategoryRoutes";
 
 // Import custom middleware
 import errorHandler from "./middleware/errorMiddleware";
@@ -19,6 +20,7 @@ app.use(errorHandler);
 
 // API routing
 app.use("/api/v1/flavour", flavourRoutes);
+app.use("/api/v1/teaCategory", teaCategoryRoutes);
 
 const port = process.env.PORT || 9000;
 
