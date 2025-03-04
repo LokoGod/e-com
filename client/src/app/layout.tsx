@@ -6,13 +6,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Page_wrapper from "@/components/wrappers/page_wrapper";
 import Navbar from "@/components/NavBar";
 import SideBar from "@/components/SideBar";
-
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Toaster, toast } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Toaster richColors />
         <Margin_width_wrapper>
           <TooltipProvider>
           <ThemeProvider
