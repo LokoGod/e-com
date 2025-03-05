@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Edit, MoreHorizontal, Trash } from "lucide-react";
+import { Edit, MoreHorizontal, PackagePlus, Trash } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -32,6 +32,8 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Slider } from "../ui/slider";
+import Link from "next/link";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 // Sample product data
 const products = [
@@ -116,7 +118,7 @@ export default function ProductTable() {
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div className="space-y-2">
           <Label htmlFor="name">Product Name</Label>
           <Input
@@ -157,6 +159,19 @@ export default function ProductTable() {
             onValueChange={setPriceRange}
             className="py-4"
           />
+        </div>
+
+        <div className="space-y-8 flex justify-end">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link href="/products/addProducts">
+                <Button>
+                  <PackagePlus />
+                </Button>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent side="left">Add Products</TooltipContent>
+          </Tooltip>
         </div>
       </div>
 

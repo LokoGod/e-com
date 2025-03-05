@@ -10,6 +10,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
+import Link from "next/link";
 
 export function SearchCombo() {
   const [open, setOpen] = useState(false);
@@ -45,7 +46,7 @@ export function SearchCombo() {
                 <>
                   <CommandEmpty>No results found.</CommandEmpty>
                   <CommandGroup heading="Suggestions">
-                    <CommandItem>Calendar</CommandItem>
+                    <Link href="/products"><CommandItem>Products</CommandItem></Link>
                     <CommandItem>Search Emoji</CommandItem>
                     <CommandItem>Calculator</CommandItem>
                   </CommandGroup>
@@ -67,7 +68,7 @@ export function SearchCombo() {
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Suggestions">
-            <CommandItem>Calendar</CommandItem>
+          <Link href="/products"><CommandItem>Products</CommandItem></Link>
             <CommandItem>Search Emoji</CommandItem>
             <CommandItem>Calculator</CommandItem>
           </CommandGroup>
