@@ -35,3 +35,26 @@ model Tea_Category {
   prod_category Tea_Product? @relation(fields: [prod_catId], references: [id])
   prod_catId    Int?
 }
+
+model User_Details {
+  id         Int    @id @default(autoincrement())
+  email      String @unique
+  firstName  String
+  lastName   String
+  country    String
+  region     String
+  address    String
+  city       String
+  postalCode Int
+  phonNumber Int
+}
+
+model Order {
+  id                  Int      @id @default(autoincrement())
+  // tea_product
+  userShippingDetails String
+  // userDetails
+  totalAmount         Float
+  paymentMethod       String
+  orderDateTime       DateTime
+}
