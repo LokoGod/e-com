@@ -1,8 +1,8 @@
 import express from "express";
 const teaProductRoutes = express.Router();
 
-import { createTeaProduct } from "../controllers/teaProductController";
+import { getAllTeaProducts, createTeaProduct } from "../controllers/teaProductController";
 
-teaProductRoutes.route("/").post(createTeaProduct);
+teaProductRoutes.route("/").get(getAllTeaProducts).post(createTeaProduct);
 
 export { teaProductRoutes };

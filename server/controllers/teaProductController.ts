@@ -1,6 +1,15 @@
 import { NextFunction, Request, Response } from "express";
 import teaProductRepository from "../repositories/teaProductRepository";
 
+const getAllTeaProducts = async (req: Request, res: Response, next: NextFunction) =>  {
+    try {
+        const teaProd = await teaProductRepository.getAllTeaProducts()
+        res.status(200).json(teaProd)
+    } catch (error) {
+        next(error)
+    }
+}
+
 const createTeaProduct = async (
   req: Request,
   res: Response,
@@ -21,4 +30,4 @@ const createTeaProduct = async (
   }
 };
 
-export { createTeaProduct };
+export { getAllTeaProducts, createTeaProduct };

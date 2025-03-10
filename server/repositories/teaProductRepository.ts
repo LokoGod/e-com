@@ -1,6 +1,10 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
+const getAllTeaProducts = async () => {
+  return prisma.tea_Product.findMany({ include: {flavour: true, category: true}})
+}
+
 const createTeaProduct = async (
   title: string,
   description: string,
@@ -14,6 +18,7 @@ const createTeaProduct = async (
 };
 
 const teaProductRepository = {
+  getAllTeaProducts,
   createTeaProduct,
 };
 
