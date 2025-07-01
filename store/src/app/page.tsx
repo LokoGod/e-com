@@ -1,9 +1,14 @@
+import CategoriesSection from "@/components/landing/categories-section";
+import FeaturesSection from "@/components/landing/features-section";
 
 export default async function Dashboard() {
 
   return (
     <main>
-      <h1>Hello There</h1>
+      <div className="space-y-16">
+        <FeaturesSection />
+        <CategoriesSection />
+      </div>
     </main>
   );
 }
