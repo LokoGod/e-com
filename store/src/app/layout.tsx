@@ -4,8 +4,7 @@ import "./globals.css";
 import Margin_width_wrapper from "@/components/wrappers/margin_width_wrapper";
 import { ThemeProvider } from "@/components/theme-provider";
 import Page_wrapper from "@/components/wrappers/page_wrapper";
-// import Navbar from "@/components/NavBar";
-import SideBar from "@/components/SideBar";
+// import SideBar from "@/components/SideBar";
 import {
   Tooltip,
   TooltipContent,
@@ -13,6 +12,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Toaster, toast } from "sonner";
+import { Navbar } from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,8 +38,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* <Navbar /> */}
-            <SideBar />
+            <Navbar />
+            {/* <SideBar /> */}
             <Page_wrapper>{children}</Page_wrapper>
           </ThemeProvider>
           </TooltipProvider>
